@@ -22,7 +22,6 @@ def simulation(spins, items, picked_number):
 
     for spin in range(0, spins):
 
-
         number = items[rn.randint(0, len(items)-1)]
         last_num_list.append(number)
         spins_to_pick_a_number += 1
@@ -92,7 +91,7 @@ if __name__ == "__main__":
     items = [0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8,
              23, 10, 5, 24, 16, 33, 1, 20, 14, 31, 9, 22, 18, 29, 7, 28, 12, 35, 3, 26]
 
-    trials = [10000, 1000000, 100000000, 10000000000]
+    trials = [ 10000, 1000000, 10000000,100000000]
 
     for spins in trials:
         start = time.time()
